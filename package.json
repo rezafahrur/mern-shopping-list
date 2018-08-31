@@ -1,0 +1,24 @@
+{
+  "name": "mern_shopping_list",
+  "version": "1.0.0",
+  "description": "shopping list dengan MERN",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev-reza-mern-shoppinglist" : "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Reza Fahrur Rasyid",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
